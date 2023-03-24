@@ -6,7 +6,7 @@ name: CI
 on: push
 jobs:
   first-job:
-    run-on: windows-latest
+    runs-on: windows-latest
     steps:
       - run: node --version
       - run: npm --version
