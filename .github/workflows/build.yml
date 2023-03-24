@@ -10,4 +10,12 @@ jobs:
     steps:
       - run: node --version
       - run: npm --version
+  bash-example:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Group of log lines
+        run: |
+            echo "::group::My title"
+            echo "Inside group"
+            echo "::endgroup::"
 
